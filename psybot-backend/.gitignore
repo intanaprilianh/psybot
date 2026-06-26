@@ -1,0 +1,9 @@
+.env.local
+.env
+*.key
+*.pem
+credentials.json
+google-services.json
+GoogleService-Info.plist
+node_modules/
+.supabase/

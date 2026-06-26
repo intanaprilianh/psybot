@@ -1,0 +1,67 @@
+# ============================================================
+# SECRETS — never commit these
+# ============================================================
+# Environment files (Supabase keys, LLM keys, Midtrans, encryption key, etc.)
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Supabase backend secrets
+psybot-backend/.env.local
+
+# Firebase client config (regenerate with: flutterfire configure)
+**/google-services.json
+**/GoogleService-Info.plist
+frontend/lib/firebase_options.dart
+
+# Service accounts / private keys / certificates
+*service_account*.json
+*serviceAccount*.json
+credentials.json
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+key.properties
+
+# ============================================================
+# Flutter / Dart
+# ============================================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+.fvm/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+app.*.symbols
+app.*.map.json
+coverage/
+
+# ============================================================
+# Supabase
+# ============================================================
+.supabase/
+psybot-backend/supabase/.temp/
+
+# ============================================================
+# Node / Deno
+# ============================================================
+node_modules/
+
+# ============================================================
+# IDE / OS
+# ============================================================
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.log

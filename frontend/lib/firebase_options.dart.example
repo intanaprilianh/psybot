@@ -1,0 +1,28 @@
+// firebase_options.dart — di-generate oleh FlutterFire CLI untuk project psybot-promob.
+// File asli (firebase_options.dart) di-gitignore karena berisi kunci klien Firebase.
+// Untuk membuatnya: jalankan `flutterfire configure` (pilih project psybot-promob),
+// atau salin file ini menjadi firebase_options.dart dan isi nilai dari Firebase Console.
+import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, TargetPlatform;
+
+class DefaultFirebaseOptions {
+  static FirebaseOptions get currentPlatform {
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.android:
+        return android;
+      default:
+        throw UnsupportedError(
+          'Platform ${defaultTargetPlatform.name} belum dikonfigurasi untuk Firebase.',
+        );
+    }
+  }
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'YOUR_FIREBASE_API_KEY',
+    appId: 'YOUR_FIREBASE_APP_ID',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'psybot-promob',
+    storageBucket: 'psybot-promob.firebasestorage.app',
+  );
+}
